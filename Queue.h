@@ -96,6 +96,21 @@ void PrintQueue(Queue *pointer) {
  }
 }
 
+void Destroy_Queue(Queue *pointer){
+
+    data *node = pointer->head;
+    data *temp = node;
+    while(node != NULL){
+        temp = node ;
+        node = node->next;
+        free(temp);
+    }
+
+    
+    free(pointer);
+    pointer = NULL;
+}
+
 
 
 #endif //QUEUE_H_INCLUDED

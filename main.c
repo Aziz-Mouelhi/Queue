@@ -19,9 +19,8 @@ printf("/////////////\n");
     deqval =  Dequeue(NewQueue);
     deqval =  Dequeue(NewQueue);
     PrintQueue(NewQueue);
-    deqval =  Dequeue(NewQueue);
-    deqval =  Dequeue(NewQueue);
-    PrintQueue(NewQueue);
+    
+ 
 
     return 0;
 }
