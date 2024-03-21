@@ -82,13 +82,18 @@ int Dequeue(Queue *pointer) {
 
 void PrintQueue(Queue *pointer) {
     data *current = pointer->head;
-
+    
+    if(current == NULL)
+    printf("Queue Is Empty :\n");
+    else
+ {
     printf("Queue contents: ");
-    while (current != NULL) {
+       while (current != NULL) {
         printf("%d ", current->value);  
         current = current->next;
     }
     printf("\n"); 
+ }
 }
 
 
